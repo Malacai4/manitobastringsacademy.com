@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- JQuery -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+
+    <!-- load head content -->
+    <div class="head"></div>
+    <script>
+      $(".head").load("./common/head.html");
+    </script>
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- load nav bar -->
+    <div class="nav"></div>
+
+    <!-- Page content -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="spacer"></div>
+        <img src="./Styles/slideshow/one.png" alt="" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="spacer"></div>
+        <img src="./Styles/slideshow/two.png" alt="" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="spacer"></div>
+        <img src="./Styles/slideshow/three.png" alt="" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="spacer"></div>
+        <img src="./Styles/slideshow/four.png" alt="" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="spacer"></div>
+        <img src="./Styles/slideshow/five.png" alt="" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="spacer"></div>
+        <img src="./Styles/slideshow/six.png" alt="" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="spacer"></div>
+        <img src="./Styles/slideshow/seven.png" alt="" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="spacer"></div>
+        <img src="./Styles/slideshow/eight.png" alt="" />
+      </div>
+    </div>
+
+    <div class="quote">
+      "Musical training is a more potent instrument than any other, because
+      rhythm and harmony find their way into the inward places of the soul." ~
+      Plato
+    </div>
+
+    <!-- load footer -->
+    <div class="footer"></div>
+
+    <!-- js -->
+    <script src="./js/script.js"></script>
+
+    <!-- slideshow js -->
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>
