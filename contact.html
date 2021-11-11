@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- JQuery -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/burgers.css" />
+
+    <!-- load head content -->
+    <div class="head"></div>
+    <script>
+      $(".head").load("./common/head.html");
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- load nav bar -->
+    <div class="nav"></div>
+
+    <!-- Page content -->
+    <div class="page-content">
+      <div class="text">
+        <h1 class="page-title">CONTACT</h1>
+
+        <form
+          action="./sendMail.php"
+          class="form"
+          autocomplete="off"
+          method="POST"
+        >
+          <div class="name-form">
+            <input type="text" name="name" required />
+            <label for="name" class="label-name">
+              <span class="content-name">Name</span>
+            </label>
+          </div>
+
+          <div class="email-form">
+            <input type="text" name="email" required />
+            <label for="email" class="label-name">
+              <span class="content-name">Email</span>
+            </label>
+          </div>
+
+          <textarea
+            name="message"
+            id="msg"
+            cols="50"
+            rows="10"
+            placeholder="Your message..."
+            required
+          ></textarea>
+
+          <div
+            class="g-recaptcha"
+            data-sitekey="6LdiPAkaAAAAANZ9NgeQ6NPwkpPVCUHZQKEAv4OR"
+            data-callback="recaptchaCallback"
+            style="margin-bottom: 2vh"
+          ></div>
+
+          <div class="submit-btn">
+            <input type="submit" id="submit-btn" value="Send" required />
+          </div>
+        </form>
+
+        <p class="alternate">
+          <br />Or send an email to:
+          <a href="mailto:manitobastringsacademy@gmail.com" target="_blank"
+            >manitobastringsacademy@gmail.com</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-- load footer -->
+    <div class="footer"></div>
+
+    <!-- js -->
+    <script src="./js/script.js"></script>
+    <script>
+      const submitBtn = document.querySelector(".submit-btn");
+
+      function recaptchaCallback() {
+        submitBtn.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
