@@ -1,0 +1,122 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .name-form,
+  .email-form {
+    width: 100%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+
+    margin-bottom: 20px;
+
+    input {
+      width: 100%;
+      height: 100%;
+
+      padding-top: 15px;
+      border: none;
+      outline: none;
+
+      font-size: 16px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    label {
+      position: absolute;
+      bottom: 0px;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      border-bottom: 1px solid black;
+    }
+
+    label::after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      bottom: -1px;
+      height: 100%;
+      width: 100%;
+      border-bottom: 3px solid $blue-gradient;
+
+      transform: translateX(-101%);
+      transition: transform $transition-time ease;
+    }
+
+    .content-name {
+      position: absolute;
+      bottom: 5px;
+      left: 0px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .name-form input:focus + .label-name .content-name,
+  .name-form input:valid + .label-name .content-name,
+  .email-form input:focus + .label-name .content-name,
+  .email-form input:valid + .label-name .content-name {
+    transform: translateY(-100%);
+    font-size: 14px;
+    color: $blue-gradient;
+  }
+
+  .name-form input:focus + .label-name::after,
+  .name-form input:valid + .label-name::after,
+  .email-form input:focus + .label-name::after,
+  .email-form input:valid + .label-name::after {
+    transform: translateX(0%);
+  }
+
+  /* TEXT AREA */
+  textarea {
+    width: 100%;
+    height: 200px;
+    margin: 5px;
+    margin-bottom: 20px;
+
+    padding: 5px;
+    border: 1px solid black;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    outline: none;
+    transition: border $transition-time ease;
+
+    :focus {
+      border: 1px solid $blue-gradient;
+    }
+  }
+
+  .submit-btn {
+    display: none;
+    width: 100%;
+
+    input {
+      width: 100%;
+      height: 50px;
+
+      outline: none;
+      border: 1px solid black;
+
+      cursor: pointer;
+      transition: all $transition-time ease;
+
+      :focus {
+        border: 1px solid $blue-gradient;
+      }
+
+      :hover {
+        color: white;
+        background-color: $purple-gradient;
+      }
+    }
+  }
+
+  .alternate {
+    font-size: 16px;
+  }
+}
