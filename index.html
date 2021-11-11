@@ -11,6 +11,13 @@
     <!-- link to css -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/burgers.css" />
+    <style>
+      html,
+      body {
+        max-height: 100vh;
+        overflow-y: hidden;
+      }
+    </style>
 
     <!-- load head content -->
     <div class="head"></div>
@@ -27,42 +34,34 @@
     <!-- Page content -->
     <div class="slideshow-container">
       <div class="mySlides fade">
-        <div class="spacer"></div>
         <img src="./img/slideshow/one.png" alt="" />
       </div>
 
       <div class="mySlides fade">
-        <div class="spacer"></div>
         <img src="./img/slideshow/two.png" alt="" />
       </div>
 
       <div class="mySlides fade">
-        <div class="spacer"></div>
         <img src="./img/slideshow/three.png" alt="" />
       </div>
 
       <div class="mySlides fade">
-        <div class="spacer"></div>
         <img src="./img/slideshow/four.png" alt="" />
       </div>
 
       <div class="mySlides fade">
-        <div class="spacer"></div>
         <img src="./img/slideshow/five.png" alt="" />
       </div>
 
       <div class="mySlides fade">
-        <div class="spacer"></div>
         <img src="./img/slideshow/six.png" alt="" />
       </div>
 
       <div class="mySlides fade">
-        <div class="spacer"></div>
         <img src="./img/slideshow/seven.png" alt="" />
       </div>
 
       <div class="mySlides fade">
-        <div class="spacer"></div>
         <img src="./img/slideshow/eight.png" alt="" />
       </div>
     </div>
@@ -95,7 +94,7 @@
           slideIndex = 1;
         }
         slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 4000); // Change image every 2 seconds
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
       }
     </script>
   </body>
