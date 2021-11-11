@@ -1,32 +1,31 @@
-<div class="navbar-container">
-  <div class="navbar">
-    <div class="mobile">
-      <div class="logo">
-        <img src="../img/logo.png" alt="logo" />
-      </div>
-
-      <button
-        class="hamburger hamburger--spin"
-        type="button"
-        onclick="openHam()"
-      >
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
+<div class="navbar">
+  <div class="mobile">
+    <!-- mobile -->
+    <div class="logo">
+      <img src="../img/logo.png" alt="logo" />
     </div>
 
-    <div class="nav-links">
-      <a href="/">HOME</a>
-
-      <button class="dropdown-btn" onclick="openNav()">
-        SPRINGFEST <i class="fas fa-caret-down"></i>
-      </button>
-
-      <a href="./about.html">ABOUT US</a>
-      <a href="./contact.html">CONTACT</a>
-    </div>
+    <!-- hamburger menu -->
+    <button class="hamburger hamburger--spin" type="button" onclick="openHam()">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
   </div>
+
+  <!-- the navbar links -->
+  <div class="nav-links">
+    <a href="/">HOME</a>
+
+    <button class="dropdown-btn" onclick="openNav()">
+      SPRINGFEST <i class="fas fa-caret-down"></i>
+    </button>
+
+    <a href="./about.html">ABOUT US</a>
+    <a href="./contact.html">CONTACT</a>
+  </div>
+
+  <!-- dropdown container -->
   <div class="dropdown-container">
     <a href="./recital-class.html">RECITAL CLASS</a>
     <a href="./masterclass.html">MASTERCLASS</a>
