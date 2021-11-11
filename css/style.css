@@ -236,13 +236,13 @@ th {
 }
 
 @media only screen and (min-width: 900px) {
-  .hamburger {
+  .navbar .hamburger {
     display: none;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .hamburger {
+  .navbar .hamburger {
     outline: none;
     margin: 0;
     padding: 0;
