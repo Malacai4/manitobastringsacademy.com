@@ -60,4 +60,68 @@ body {
   margin-left: 50px;
   margin-bottom: 5vh;
 }
+
+@media only screen and (max-width: 900px) {
+  .page-content .text {
+    width: 80%;
+  }
+}
+
+a {
+  color: #39548a;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+a :hover {
+  color: #4f3477;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+th {
+  text-align: left;
+}
+
+.paragraph {
+  margin: 30px 0;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(135deg, #39548a 0%, #4f3477 100%);
+  -webkit-box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 90;
+}
+
+.footer p {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
