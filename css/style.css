@@ -230,6 +230,13 @@ th {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
+@media only screen and (max-width: 600px) {
+  .navbar .nav-links a,
+  .navbar .nav-links .dropdown-btn {
+    font-size: 18px;
+  }
+}
+
 .navbar .dropdown-container {
   position: fixed;
   top: 0;
@@ -265,6 +272,18 @@ th {
   font-size: 24px;
   font-weight: 300;
   font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (min-width: 900px) {
+  .navbar .dropdown-container {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .dropdown-container a {
+    font-size: 18px;
+  }
 }
 
 .open {
