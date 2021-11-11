@@ -2,3 +2,8 @@ $blue-gradient: rgb(57, 84, 138);
 $purple-gradient: rgb(79, 52, 119);
 $gradient-angle: 135deg;
 $transition-time: 0.3s;
+$full-gradient: linear-gradient(
+  $gradient-angle,
+  $blue-gradient 0%,
+  $purple-gradient 100%
+);
