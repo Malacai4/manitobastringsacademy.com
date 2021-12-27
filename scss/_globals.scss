@@ -45,15 +45,33 @@ body {
     color: $blue-gradient;
   }
 
+  .sub-name {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 20px 0;
+
+    color: $blue-gradient;
+  }
+
   .list {
     font-size: 16px;
-    margin-left: 50px;
+    margin-left: 20px;
+    margin-bottom: 5vh;
+  }
+
+  .table-list {
+    font-size: 14px;
+    margin-left: -20px;
     margin-bottom: 5vh;
   }
 
   @media only screen and (max-width: 900px) {
     .text {
       width: 80%;
+    }
+
+    .table-list {
+      font-size: 10px;
     }
   }
 }
@@ -81,7 +99,14 @@ td {
 }
 
 th {
+  font-size: 14px;
   text-align: left;
+}
+
+@media only screen and (max-width: 900px) {
+  th {
+    font-size: 12px;
+  }
 }
 
 .paragraph {
