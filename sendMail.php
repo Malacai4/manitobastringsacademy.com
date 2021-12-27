@@ -15,5 +15,5 @@ $headers = "From: $email";
 
 mail("manitobastringsacademy@gmail.com", $subject, $message, $headers);
 
-header("Location: /contact");
+header("Location: /contact.html");
 ?>
