@@ -35,6 +35,29 @@ body {
     }
   }
 
+  .form-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .app-form {
+    display: flex;
+    text-align: center;
+
+    text-decoration: none;
+    color: white;
+    padding: 10px 50px;
+    background-color: $blue-gradient;
+  }
+
+  .app-form:hover {
+    color: black;
+    background-color: $purple-gradient;
+  }
+
   .page-title {
     font-weight: 400;
     font-size: 48px;

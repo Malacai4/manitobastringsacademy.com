@@ -46,6 +46,39 @@ body {
   width: 100%;
 }
 
+.page-content .form-buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.page-content .app-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 10px 50px;
+  background-color: #39548a;
+}
+
+.page-content .app-form:hover {
+  color: black;
+  background-color: #4f3477;
+}
+
 .page-content .page-title {
   font-weight: 400;
   font-size: 48px;
