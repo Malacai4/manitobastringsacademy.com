@@ -31,11 +31,14 @@
       <div class="text">
         <h1 class="page-title">CONTACT</h1>
 
+        <!-- FORM -->
         <form
           action="./sendMail.php"
           class="form"
           autocomplete="off"
           method="POST"
+          name="contact"
+          netlify
         >
           <div class="name-form">
             <input type="text" name="name" required />
@@ -71,6 +74,7 @@
             <input type="submit" id="submit-btn" value="Send" required />
           </div>
         </form>
+        <!-- FORM -->
 
         <p class="alternate">
           <br />Or send an email to:
