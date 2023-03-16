@@ -124,6 +124,14 @@ th {
   margin: 30px 0;
 }
 
+.paragraph-top {
+  margin-top: 30px;
+}
+
+.paragraph-bottom {
+  margin-bottom: 30px;
+}
+
 .footer {
   position: fixed;
   left: 0;
